@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Initial styling for the image */
+img {
+    width: 500px;
+    /* height: auto; */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Bouncing animation keyframes */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Applying the bounce animation on hover */
+img:hover {
+    animation: bounce infinite 1.3s;
+    
+}
+
+.btn-return {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure the circle is clipped to the button */
+}
+
+.btn-return i {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    z-index: 2; /* Place the icon above the circle */
+}
+
+.circle-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+    /* Rotate the SVG to start the animation from the top */
+    transform: rotate(-90deg); 
+}
+
+.circle {
+    fill: none;
+    stroke: orange;
+    stroke-width: 5px;
+    stroke-dasharray: 300; /* Ensure this value is large enough to cover the circle’s circumference */
+    stroke-dashoffset: 300; /* Start with the stroke hidden */
+    transition: stroke-dashoffset 0.7s ease;
+}
+

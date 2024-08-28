@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" section="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
+        integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>GET RIDING AUSTRALIA</title>
+</head>
+
+<body>
+    <!-- body navigation -->
+    <nav class="nav" id="nav-body">
+        <a href="#header">
+            <img src="images/icons/LOGO-for-light.png" alt="Get Riding Queensland logo">
+        </a>
+        <ul class="nav-links">
+            <li>
+                <a href="#quick-facts">Quick Facts <i class="fa-solid fa-bicycle"></i></a>
+            </li>
+            <li>
+                <a href="#benefits">Benefits of Cycling <i class="fa-solid fa-heart"></i></a>
+            </li>
+            <li>
+                <a href="#gallery">Cyclist's Sights <i class="fa-solid fa-camera"></i></a>
+            </li>
+            <li>
+                <a href="#contact">Contact Us <i class="fa-solid fa-envelope"></i></a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars burger"></i>
+    </nav>
+
+    <!-- return-to-top button -->
+    <a href="#header">
+        <sl-tooltip content="Return to top">
+            <div class="btn-return">
+                <svg width="3rem" height="3rem" viewBox="0 0 100 100" class="circle-svg">
+                    <circle cx="50" cy="50" r="48" class="circle"></circle>
+                </svg>
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+        </sl-tooltip>
+    </a>
+
+    <!-- header section -->
+    <section class="section header" id="header">
+        <div class="content">
+            <div class="textual">
+                <h1>Get on your bike!</h1>
+                <p>
+                    We Queenslanders don't ride enough. Cycling boosts your health, reduces
+                    your carbon footprint, and lets you explore our stunning state up close.
+                    Embrace adventure, improve your wellbeing, and protect our environment.
+                    Start pedalling today for a brighter tomorrow!
+                </p>
+                <div class="buttons">
+                    <a href="#quick-facts">
+                        Cycling Quick Facts
+                    </a>
+                    <a href="#benefits">
+                        Benefits of Cycling
+                    </a>
+                </div>
+            </div>
+            <div class="container-image container-circle">
+                <img src="images/photos/header-image-circle.png"
+                    alt="A Queensland woman riding tandom with her child on a coastline">
+            </div>
+        </div>
+    </section>
+
+    <!-- quick facts section -->
+    <section class="section qf" id="quick-facts">
+        <div class="content">
+            <h2>Quick Facts</h2>
+            <div class="facts">
+                <div class="fact-card card1">
+                    <img src="images/icons/heart-attack.png" alt="A beating heart icon">
+                    <p>
+                        Cycling reduces your risk
+                        of serious illnesses like
+                        heart disease, type-two
+                        diabetes, high blood
+                        pressure, and obesity
+                    </p>
+                </div>
+                <div class="fact-card card2">
+                    <img src="images/icons/road.png" alt="A bike lane road icon">
+                    <p>
+                        Well-planned cycling
+                        infrastructure pay
+                        themselves off in
+                        health benefits and
+                        reduced congestion
+                    </p>
+                </div>
+                <div class="fact-card card3">
+                    <img src="images/icons/stretch.png" alt="a person stretching icon">
+                    <p>
+                        Almost two out of five
+                        Queensland adults are
+                        not getting enough
+                        exercise
+                    </p>
+                </div>
+                <div class="fact-card card4">
+                    <img src="images/icons/riding-icon.png" alt="a person riding a bike icon">
+                    <p>
+                        Nine in ten Queensland
+                        adults cycle because it
+                        is good for their health
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- benefits section -->
+    <section class="section benefits" id="benefits">
+        <div class="content">
+            <div class="textual">
+                <h2>Benefits of Cycling</h2>
+                <sl-tab-group class="tab-group">
+                    <sl-tab slot="nav" panel="mental">
+                        <h5>Mental Health</h5>
+                    </sl-tab>
+                    <sl-tab slot="nav" panel="physical">
+                        <h5>Physical Health</h5>
+                    </sl-tab>
+                    <sl-tab slot="nav" panel="social">
+                        <h5>Social Wellbeing</h5>
+                    </sl-tab>
+                    <sl-tab slot="nav" panel="environment">
+                        <h5>The Environment</h5>
+                    </sl-tab>
+                    <sl-tab-panel name="mental">
+                        <p>
+                            Cycling boosts mental health by reducing stress, anxiety, and depression. It promotes the
+                            release of endorphins,
+                            improves mood, enhances focus, and provides a sense of freedom and relaxation through
+                            regular physical activity.
+                        </p>
+                    </sl-tab-panel>
+                    <sl-tab-panel name="physical">
+                        <p>
+                            Cycling improves physical health by strengthening muscles, enhancing cardiovascular fitness,
+                            and boosting stamina.
+                            It aids in weight management, supports joint mobility, and reduces the risk of chronic
+                            diseases like heart disease,
+                            diabetes, and obesity.
+                        </p>
+                    </sl-tab-panel>
+                    <sl-tab-panel name="social">
+                        <p>
+                            Cycling enhances social well-being by fostering connections with others, encouraging group
+                            activities, and building
+                            community. It promotes teamwork, provides opportunities for social interaction, and helps
+                            create a sense of belonging
+                            through shared experiences and outdoor adventures.
+                        </p>
+                    </sl-tab-panel>
+                    <sl-tab-panel name="environment">
+                        <p>
+
+                            Cycling benefits the environment by reducing carbon emissions, decreasing air pollution, and
+                            lowering the demand for
+                            fossil fuels. It promotes sustainable transportation, reduces traffic congestion, and helps
+                            preserve natural resources,
+                            contributing to a healthier planet.
+                        </p>
+                    </sl-tab-panel>
+                </sl-tab-group>
+            </div>
+            <div class="container-image container-circle">
+                <img class="" src="images/mental-health-cropped.png"
+                    alt="an artistic drawing of lady with flowers coming from her head, depiting mental health as a decorative potplant">
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery section -->
+    <section class="section gallery" id="gallery">
+        <sl-dialog label="Image Details" class="dialog dialog-overview">
+            Location: <span class="span-loc"></span><br>
+            Taken by: <span class="span-taken">Lorem ipsum dolor sit amet.</span>
+        </sl-dialog>
+        <div class="content">
+            <div class="textual">
+                <h2>Cyclist's Sights</h2>
+                <p>
+                    Explore the breathtaking beauty of Queensland through the eyes of fellow cyclists. Cyclist's Sights
+                    showcases stunning
+                    photos capturing the unique experiences and hidden gems found on two wheels.
+                    <br>
+                    <br>
+                    Click on a photo to discover its location, or share your own amazing sights and experiences using
+                    the form below. Lets
+                    celebrate and showcase the incredible landscapes and adventures that make cycling in Queensland so
+                    special!
+                </p>
+            </div>
+            <div class="container-gallery">
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="images/photos/carousel/maleny.jpg" alt="Riding in Maleny, taken by John">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/photos/carousel/rockhampton.jpg"
+                                    alt="Trail riding in Rockhampton, taken by Troy">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/photos/carousel/enoggera-res.jpg"
+                                    alt="Riding around Enoggera Reseviour, taken by Michael">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/photos/carousel/brisbane-river.jpg"
+                                    alt="Riding on Brisbane's riverwalk, taken by Jeanette">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/photos/carousel/south-bank.jpg"
+                                    alt="Riding in South Bank along the Brisbane River, taken by Mae">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/photos/carousel/atherton.jpg"
+                                    alt="Trailing riding in Atherton, taken by Tyson">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="section contact" id="contact">
+        <div class="content">
+            <div class="textual">
+                <div class="container-image">
+                    <img src="images/photos/contact-image.png"
+                        alt="A woman standing in front of a field with a mountain range in the background">
+                </div>
+                <h3>Submit your own Sights</h3>
+                <p>
+                    Complete the form provided and submit photography of your own riding adventure experiences in
+                    Queensland to have it
+                    featured on Cyclist's Sights!
+                    <br><br>
+                    Along with your name and email, provide your photo's location in Queensland and the date it was
+                    taken.
+                </p>
+            </div>
+            <div class="container-forms">
+                <form class="form">
+                    <fieldset class="contact-form">
+                        <legend>
+                            <h4>Contact details</h4>
+                        </legend>
+                        <div class="inputs">
+                            <input type="text" id="input-fname" placeholder="First name" required>
+                            <input type="text" id="input-lname" placeholder="Last name" required>
+                            <input type="email" id="input-email" placeholder="Email address" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="photo-form">
+                        <legend>
+                            <h4>Photo details</h4>
+                        </legend>
+                        <div class="inputs">
+                            <input type="text" id="input-location" placeholder="Photo location" required>
+                            <input type="date" id="input-date" required>
+                        </div>
+                    </fieldset>
+                    <label class="form-label" for="input-image"><i class="fa-solid fa-camera"></i> Upload your
+                        photo</label>
+                    <input type="file" id="input-image">
+                    <input type="submit" class="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>We acknowledge the Traditional Owners of Country and recognise their continued connection to
+            land, waters, culture, and community. <br> We pay respects to Elders past, present, and future.</p>
+        <div class="socials">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>

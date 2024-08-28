@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Initial styling for the image */
+/* img {
+    width: 500px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+} */
+
+/* Bouncing animation keyframes */
+/* @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+} */
+
+/* Applying the bounce animation on hover */
+/* img:hover {
+    animation: bounce infinite 1.3s;
+    
+} */
+
+/* .splide {
+    width: 20%;
+} */
+
+.container {
+    width: 50%;
+    height: 100vh;
+}
+
+
+
+.splide__slide {
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splide__slide p {
+    border: 1px blue solid;
+    padding: 50px;
+}
+
+.splide__arrow {
+    background: none;
+    opacity: 1;
+    
+}
+
+.splide__arrow i {
+    font-size: 100px;
+    color: orange;
+}
+
+.splide__pagination__page {
+    border: 1px solid blue;
+}
+
+.splide__pagination__page.is-active {
+    background-color: red;
+}
